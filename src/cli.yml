@@ -1,0 +1,26 @@
+name: hashcracker
+version: "1.0"
+author: Tyler St. Onge <tylertstonge@gmail.com>
+about: Hash cracking through dictionary attacks
+args:
+    - wordlist:
+        short: w
+        long: wordlist
+        value_name: FILE
+        help: wordlist to read from
+        required: true
+        takes_value: true
+    - hash:
+        short: h
+        long: hash
+        value_name: HASH
+        help: the hash to run attack against
+        required: true
+        takes_value: true
+    - threads:
+        short: t
+        long: threads
+        value_name: THREADS
+        help: number of parallel threads to use
+        required: true
+        takes_value: true

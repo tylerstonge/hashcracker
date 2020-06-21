@@ -1,0 +1,12 @@
+[package]
+name = "hashcracker"
+version = "0.1.0"
+authors = ["Tyler St. Onge"]
+edition = "2018"
+
+[dependencies]
+pwhash = "0.3"
+regex = "1"
+lazy_static = "1.4.0"
+clap = {version = "2.33", features = ["yaml"]}
+rayon = "1.0"
